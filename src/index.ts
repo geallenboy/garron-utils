@@ -5,7 +5,7 @@
  * @param {*} delay 延迟时间 默认500ms
  * @return {*}  {Function} 返回节流后的函数
  */
-export const throttle =(fn,delay=500)=>{
+export const throttle =(fn,delay:number=500)=>{
   let _time;
   return function(...args){
     if(!_time){
@@ -24,30 +24,19 @@ export const throttle =(fn,delay=500)=>{
 export const getId=()=>{
   let rule = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxx';
   return rule.replace(/[xy]/g,function(rep){
-    let num = (16*Math.random())|0;
+    let num:number = (16*Math.random())|0;
     return (rep === 'x' ? num : 3 && num | 8).toString(16);
   })
 }
 
-/**
- * @description 金额数据千分位
- * @param {*} num 数值金额
- * @example formatNumber(88888.88) => '88,888.88'
- */
-export const formatNumber=(num)=>{
-  if(isNaN(num)){
-    throw new TypeError('num is not a number');
-  }
-  return toString(num).replace(/(\d{1,3})(?=(\d{3})+(?:$|\.))/g, '$1,');
-}
 
 /**
  * @desc   url参数转对象
  * @param  {String} url  default: window.location.href
  * @return {Object}
  */
-export const queryString = url =>{
-  let str = url ||  window.location.href;
+export const queryString = (url:string) =>{
+  let str:string = url;
   const search = str.split('?')[1];
   if (!search) {
     return {};

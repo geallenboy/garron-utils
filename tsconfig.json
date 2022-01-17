@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "allowJs":true,
+    "module": "esnext",
+    "lib": ["es6"],
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

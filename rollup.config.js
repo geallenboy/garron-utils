@@ -2,6 +2,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import { babel } from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
+import typescript from "rollup-plugin-typescript2";
 import glob from 'glob';
 import json from '@rollup/plugin-json';
 import pkg from './package.json';
@@ -23,6 +24,10 @@ const plugins = [
   babel({
     exclude: 'node_modules/**',
     babelHelpers: 'runtime'
+  }),
+  typescript({
+    exclude: "node_modules/**",
+    typescript: require("typescript"),
   }),
   json(),
   resolve(), // 查找和打包node_modules中的第三方模块
@@ -57,11 +62,11 @@ function getEntriesJs(path) {
   });
   return entryList;
 }
-const entryJS = getEntriesJs('src/methods/*.js');
+const entryJS = getEntriesJs('src/methods/*.ts');
 
 export default [
   {
-    input: './src/index.js',
+    input: './src/index.ts',
     output: [
       {
         file: pkg.browser,
