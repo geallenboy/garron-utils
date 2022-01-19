@@ -46,14 +46,14 @@ const plugins = [
  * @param path
  * @returns {[]}
  */
-function getEntriesJs(path) {
+function getEntriesJs(path,name) {
   let entryList = [];
   glob.sync(path).forEach(entry => {
     let fileName = entry.replace(/(.*\/)*([^.]+).*/gi, '$2');
     entryList.push({
       input: entry,
       output: {
-        file: `dist/lib/${fileName}.js`,
+        file: `dist/${name}/${fileName}.js`,
         format: 'umd',
         name: fileName
       },
@@ -62,7 +62,7 @@ function getEntriesJs(path) {
   });
   return entryList;
 }
-const entryJS = getEntriesJs('src/methods/*.ts');
+const entryJS = getEntriesJs('src/base/*.ts','base');
 
 export default [
   {

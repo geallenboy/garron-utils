@@ -1,10 +1,15 @@
 {
-  "compilerOptions": {
-    "allowJs":true,
-    "module": "esnext",
-    "lib": ["es6"],
-  },
-  "include": [
-    "src/**/*"
-  ]
+    "compilerOptions": {
+        "target": "es5",
+        "module": "ES2015",//组织代码方式
+        "allowJs":true, //编译时，允许有 js 文件
+        "sourceMap": true,
+        "moduleResolution": "node", // 模块解决策略
+        "experimentalDecorators": true, // 开启装饰器定义
+        "allowSyntheticDefaultImports": true, // 允许es6方式import
+        "lib": ["dom",
+            "es5",
+            "es2015"]
+    },
+    "include": ["src/**/*"]
 }
