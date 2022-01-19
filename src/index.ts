@@ -11,15 +11,15 @@ import {
   loalStorageSet,loalStorageGet,
   loalStorageRemove,
   sessionStorageSet,
-  sessionStorageGet,
-  sessionStorageRemove,
+  sessionStorageGet,sessionStorageRemove,
   setCookie,
   getCookie,
   delCookie
 } from './base/storage';
 
 export {
-  randonNum,sample,nowTime,
+  randonNum,sample,
+  nowTime,
   dateFormater,
   scrollToBottom,
   scrollToTop,
