@@ -2,7 +2,7 @@ module.exports = {
   // 可选类型
   types:[
     { value: 'feat',     name: 'feat:✨ Features | 新功能'},
-    { value: 'fix',      name: 'fix:🐛 Bug Fixes | Bug 修复'},
+    { value: 'fix🐛',      name: 'fix:🐛 Bug Fixes | Bug 修复'},
     { value: 'docs',     name: 'docs:📚 Documentation | 文档'},
     { value: 'style',    name: 'style:💎 Styles | 风格'},
     { value: 'init',     name: 'init:🎉 Init | 初始化'},

@@ -66,9 +66,9 @@
   },
   "lint-staged": {
     "*.{ts}": [
+      "git add",
       "npm run prettier",
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   },
   "dependencies": {
