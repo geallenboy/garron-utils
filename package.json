@@ -1,7 +1,7 @@
 {
   "name": "@garron/utils",
   "version": "1.0.0",
-  "description": "ge-utils前端常用方法库",
+  "description": "garron-utils前端常用方法库",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "browser": "dist/index.umd.js",
