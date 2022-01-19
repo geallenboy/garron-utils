@@ -9,8 +9,8 @@
     "build": "rimraf dist && rollup --config rollup.config.js",
     "dev": "rollup --config rollup.config.dev.js",
     "test": "jest --watch --collect-coverage --verbose",
-    "prettier": "prettier --write  \"src/**/*.{js,ts}\"",
-    "lint-staged": "lint-staged -c ./.husky/lintstagedrc.js",
+    "lint:prettier": "prettier --write  \"src/**/*.{js,ts}\"",
+    "lint:lint-staged": "lint-staged -c ./.husky/lintstagedrc.js",
     "doc": "typedoc --options typedoc.json",
     "prepare": "husky install"
   },
