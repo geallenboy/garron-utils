@@ -19,8 +19,7 @@ import {
 
 export {
   randonNum,sample,
-  nowTime,
-  dateFormater,
+  nowTime,dateFormater,
   scrollToBottom,scrollToTop,
   throttle,
   isType,

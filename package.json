@@ -10,7 +10,7 @@
     "dev": "rollup --config rollup.config.dev.js",
     "test": "jest --watch --collect-coverage --verbose",
     "lint:prettier": "prettier --write  \"src/**/*.{js,ts}\"",
-    "lint:lint-staged": "lint-staged -c ./.husky/lintstagedrc.js",
+    "lint-staged": "lint-staged -c ./lintstagedrc.js",
     "doc": "typedoc --options typedoc.json",
     "prepare": "husky install"
   },
