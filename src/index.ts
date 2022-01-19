@@ -13,8 +13,7 @@ import {
   loalStorageRemove,
   sessionStorageSet,
   sessionStorageGet,
-  sessionStorageRemove,
-  setCookie,
+  sessionStorageRemove,setCookie,
   getCookie,
   delCookie
 } from './base/storage';

@@ -1,16 +1,18 @@
 module.exports = {
   // 可选类型
   types:[
-    { value: 'feat',     name: 'feat:      新功能'},
-    { value: 'fix',      name: 'fix:       修复'},
-    { value: 'docs',     name: 'docs:      文档变更'},
-    { value: 'style',    name: 'style:     代码格式（不影响代码运行的变动）'},
-    { value: 'refactor', name: 'refactor:  重构（既不是增加feature）,也不是修复bug'},
-    { value: 'pref',     name: 'pref:      性能优化'},
-    { value: 'test',     name: 'test:      增加测试'},
-    { value: 'chore',    name: 'chore:     构建过程或辅助工具的变动'},
-    { value: 'revert',   name: 'revert:    回退'},
-    { value: 'build',    name: 'build:     打包'}
+    { value: 'feat',     name: 'feat:✨ Features | 新功能'},
+    { value: 'fix',      name: 'fix:🐛 Bug Fixes | Bug 修复'},
+    { value: 'docs',     name: 'docs:📚 Documentation | 文档'},
+    { value: 'style',    name: 'style:💎 Styles | 风格'},
+    { value: 'init',     name: 'init:🎉 Init | 初始化'},
+    { value: 'refactor', name: 'refactor:📦 Code Refactoring | 代码重构'},
+    { value: 'pref',     name: 'pref:🚀 Performance Improvements | 性能优化'},
+    { value: 'test',     name: 'test:✅ Tests | 测试'},
+    { value: 'chore',    name: 'chore:♻️ Chore | 构建/工程依赖/工具'},
+    { value: 'revert',   name: 'revert:⏪ Revert | 回退'},
+    { value: 'build',    name: 'build:🛠‍ Build System | 打包构建'},
+    { value: 'ci',       name: 'ci:👷 Continuous Integration | CI 配置'}
   ],
 
   // 步骤
