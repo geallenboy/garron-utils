@@ -8,8 +8,7 @@ import { throttle, debounce } from './base/function';
 import { strFistUpperCase, telFormat } from './base/string';
 import { checkCardNo } from './base/format';
 import {
-  loalStorageSet,
-  loalStorageGet,
+  loalStorageSet,loalStorageGet,
   loalStorageRemove,
   sessionStorageSet,
   sessionStorageGet,
@@ -20,9 +19,7 @@ import {
 } from './base/storage';
 
 export {
-  randonNum,
-  sample,
-  nowTime,
+  randonNum,sample,nowTime,
   dateFormater,
   scrollToBottom,
   scrollToTop,
