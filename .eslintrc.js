@@ -1,15 +1,19 @@
 /**
  * ESLint typescript 规则
  * 依赖版本：
- *   @typescript-eslint/parser ^3.10.1
- *   @typescript-eslint/eslint-plugin ^3.10.1
+ *   @typescript-eslint/parser 
+ *   @typescript-eslint/eslint-plugin 
  */
  module.exports = {
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
-  rules: {
+  parser: '@typescript-eslint/parser', //定义typescript ESLint的解析器
+  extends: ['standard', 'prettier'],
+  plugins: ['@typescript-eslint'],//定义了typescript-eslint文件所依赖的插件
+  env:{                          //指定代码的运行环境
+    browser: true,
+    node: true,
+  }, 
+  rules: {  //配置自定义规则
     'react/sort-comp': 'off',
-
     /**
      * 重载的函数必须写在一起
      * @reason 增加可读性
@@ -207,12 +211,13 @@
      * @reason 可以简化代码
      */
     '@typescript-eslint/no-inferrable-types': 'off',
+    
+    'no-invalid-this': 'off',
     /**
      * 禁止在类之外的地方使用 this
      * @reason 只允许在 class 中使用 this
      */
-    'no-invalid-this': 'off',
-    '@typescript-eslint/no-invalid-this': 'error',
+    '@typescript-eslint/no-invalid-this': 'off',
     /**
      * 禁止使用无意义的 void 类型
      * @reason void 只能用在函数的返回值中

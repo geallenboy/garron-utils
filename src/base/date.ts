@@ -20,13 +20,13 @@ export const nowTime = (): string => {
  * @returns {string}
  */
 export const dateFormater = (formater: string, time: string): string => {
-  let date: Date = time ? new Date(time) : new Date(),
-    Y: string = date.getFullYear() + '',
-    M: number = date.getMonth() + 1,
-    D: number = date.getDate(),
-    H: number = date.getHours(),
-    m: number = date.getMinutes(),
-    s: number = date.getSeconds();
+  const date: Date = time ? new Date(time) : new Date();
+  const Y: string = date.getFullYear() + '';
+  const M: number = date.getMonth() + 1;
+  const D: number = date.getDate();
+  const H: number = date.getHours();
+  const m: number = date.getMinutes();
+  const s: number = date.getSeconds();
 
   return formater
     .replace(/YYYY|yyyy/g, Y)

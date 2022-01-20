@@ -8,9 +8,9 @@ export const version: string = '1.0.0';
  * @returns
  */
 export const getId = (): string => {
-  let rule = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxx';
+  const rule = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxx';
   return rule.replace(/[xy]/g, function (rep) {
-    let num: number = (16 * Math.random()) | 0;
+    const num: number = (16 * Math.random()) | 0;
     return (rep === 'x' ? num : 3 && num | 8).toString(16);
   });
 };
@@ -21,13 +21,13 @@ export const getId = (): string => {
  * @return {Object}
  */
 export const queryString = (url: string): Object => {
-  let str: string = url || window.location.href;
+  const str: string = url || window.location.href;
   const search: string = str.split('?')[1];
   const obj: Object = {};
   const reg: RegExp = /([^?&=]+)=([^?&=]*)/g;
   search.replace(reg, (rs, $1, $2) => {
     const name: string = decodeURIComponent($1);
-    let val = String(decodeURIComponent($2));
+    const val = String(decodeURIComponent($2));
     obj[name] = val;
     return rs;
   });

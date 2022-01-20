@@ -6,11 +6,10 @@
   "module": "dist/index.esm.js",
   "browser": "dist/index.umd.js",
   "scripts": {
-    "eslint": "eslint ./src/**/*.ts",
-    "lint-fix":"eslint --fix --ext",
     "build": "rimraf dist && rollup --config rollup.config.js",
     "dev": "rollup --config rollup.config.dev.js",
     "test": "jest --watch --collect-coverage --verbose",
+    "eslint": "eslint ./src/**/*.ts",
     "prettier": "prettier --write  \"src/**/*.{js,ts}\"",
     "doc": "typedoc --options typedoc.json",
     "commit": "git-cz",
@@ -31,24 +30,31 @@
     "@babel/core": "^7.15.8",
     "@babel/plugin-transform-runtime": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
-    "@commitlint/cli": "^16.0.2",
     "@commitlint/config-conventional": "^16.0.0",
-    "@commitlint/cz-commitlint": "^16.0.0",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@types/jest": "^27.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",
     "commitizen": "^4.2.4",
+    "commitlint": "^15.0.0",
+    "commitlint-config-cz": "^0.13.2",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^6.3.0",
-    "eslint": "^6.8.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.2.0",
     "glob": "^7.2.0",
     "husky": "^7.0.4",
     "jest": "^27.4.7",
-    "lint-staged": "^12.2.0",
-    "prettier": "^2.4.1",
+    "lint-staged": "^12.2.1",
+    "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
     "rollup": "^2.58.0",
     "rollup-plugin-livereload": "^2.0.5",
@@ -66,12 +72,9 @@
   },
   "lint-staged": {
     "*.{ts}": [
-      "git add",
       "npm run prettier",
-      "eslint --fix"
+      "npm run eslint"
     ]
-  },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.10.0"
   }
+ 
 }

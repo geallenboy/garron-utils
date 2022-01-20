@@ -14,27 +14,27 @@ export const randonNum = (min: number, max: number): number => {
  * @returns
  */
 export const format = (n: number | string): string => {
-  let n_string: string = n.toString();
+  const nString: string = n.toString();
   let num: string = '';
   let temp: string = '';
-  if (n_string.includes('.')) {
-    num = n_string.substring(0, n_string.indexOf('.'));
-    temp = n_string.substring(n_string.indexOf('.'), n_string.length);
+  if (nString.includes('.')) {
+    num = nString.substring(0, nString.indexOf('.'));
+    temp = nString.substring(nString.indexOf('.'), nString.length);
   } else {
-    num = n_string;
+    num = nString;
   }
-  let len = num.length;
+  const len = num.length;
   if (len <= 3) {
     return num;
   } else {
-    let remainder = len % 3;
+    const remainder = len % 3;
     if (remainder > 0) {
-      //不是3的整数倍
+      // 不是3的整数倍
       return (
         num.slice(0, remainder) + ',' + num.slice(remainder, len).match(/\d{3}/g).join(',') + temp
       );
     } else {
-      //3的整数倍
+      // 3的整数倍
       return num.slice(0, len).match(/\d{3}/g).join(',') + temp;
     }
   }
