@@ -1,5 +1,7 @@
-docs
-dist
-build
-coverage
-node_modules
+**/*.svg
+**/*.ejs
+**/*.html
+package.json
+.umi
+.umi-production
+.umi-test

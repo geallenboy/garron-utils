@@ -1,18 +1,33 @@
-安装使用
-// npm
-npm install @garron/utils
-命令
-// 打包
-npm run build
+# garron-utils
 
-// 生成文档
-npm run doc
+## Getting Started
 
-// 测试
-npm run doc
-发布
-npm login
-npm publish
+Install dependencies,
 
+```bash
+$ npm i
+```
 
+Start the dev server,
 
+```bash
+$ npm start
+```
+
+Build documentation,
+
+```bash
+$ npm run docs:build
+```
+
+Run test,
+
+```bash
+$ npm test
+```
+
+Build library via `father-build`,
+
+```bash
+$ npm run build
+```
