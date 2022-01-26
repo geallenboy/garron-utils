@@ -7,9 +7,10 @@
 export const throttle = (fn: Function, delay: number = 500): Function => {
   let _time: any=null;
   return function (...args: any[]) {
+    let context = this;
     if (!_time) {
       _time = setTimeout(() => {
-        // fn.call(this, ...args);
+        fn.call(context, ...args);
         _time = null;
       }, delay);
     }

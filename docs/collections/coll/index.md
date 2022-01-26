@@ -1,5 +1,9 @@
 ---
-title: uscrollToTop1
+title: coll
+nav:
+  path: /utils
+group:
+  path: /collections
 ---
 
 # 基础用法

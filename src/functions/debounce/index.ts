@@ -7,11 +7,13 @@
 export const debounce = (fn: Function, delay: number = 500): Function => {
   let timeout: any = null;
   return function (...args: any[]) {
+    let context = this;
     if (timeout) clearTimeout(timeout);
     timeout = setTimeout(() => {
       timeout = null;
-      // fn.apply(this, args);
+      fn.apply(context, args);
     }, delay);
+    
   };
 };
 export default debounce;

@@ -1,6 +1,9 @@
 ---
-title: sample1
-order: 1
+title: sample
+nav:
+  path: /utils
+group:
+  path: /arrays
 ---
 
 # 基础用法

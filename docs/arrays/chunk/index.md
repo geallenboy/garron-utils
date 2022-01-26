@@ -1,6 +1,11 @@
 ---
 title: chunk
-order: 2
+nav:
+  path: /utils
+  order: 1
+group:
+  path: /arrays
+
 ---
 
 # 基础用法

@@ -2,6 +2,75 @@ import { defineConfig } from 'dumi';
 export default defineConfig({
   title: 'garron-utils',
   favicon:
-    'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
-  logo: 'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
+    '/logo.svg',
+  logo: '/logo.svg',
+  mode: 'site',
+  navs: [
+    {
+      title: '指南',
+      path: '/guide',
+    }, 
+    {
+      title: 'Utils',
+      path: '/utils',
+    },
+    {
+      title: 'GitHub',
+      path: 'https://github.com/umijs/dumi',
+    }
+  ],
+  menus: {
+    '/': [
+      {
+        title: '首页',
+        path: 'index',
+      },
+    ],
+    '/guide': [
+      {
+        title: '介绍',
+        path: '/guide',
+      }
+    ],
+    "/utils":[
+      {
+        title:'Array(数组)',
+        children:[
+          '/arrays/chunk',
+          '/arrays/sample',
+        ]
+      },
+      {
+        title:'collections(集合)',
+        children:[
+          '/collections/coll',
+        ]
+      },
+      {
+        title:'functions(函数)',
+        children:[
+          '/functions/debounce',
+          '/functions/throttle',
+        ]
+      },
+      {
+        title:'objects(对象)',
+        children:[
+          '/objects/obj',
+        ]
+      },
+      {
+        title:'utility(工具)',
+        children:[
+          '/utility/fetch',
+        ]
+      },
+      {
+        title:'string(字符串)',
+        children:[
+          '/string',
+        ]
+      }
+    ]
+  },
 });

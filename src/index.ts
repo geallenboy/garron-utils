@@ -1,4 +1,17 @@
-import { sample } from './array/sample';
-import { scrollToTop } from './dom/scrollToTop';
+import { debounce } from './functions/debounce';
+import { throttle } from './functions/throttle';
+import {getId,checkStr,
+  strFistUpperCase,queryString,telFormat} from './string'
+import {myFetch} from './utility/fetch'
 
-export { scrollToTop, sample };
+
+export { 
+  debounce, 
+  throttle,
+  strFistUpperCase,
+  telFormat,
+  myFetch,
+  queryString,
+  getId,
+  checkStr
+};
