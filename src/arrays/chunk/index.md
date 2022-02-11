@@ -15,7 +15,7 @@ group:
 # Demo
 
 ```javascript
-import { chunk } from 'garron-utils';
+import { chunk } from '@garron/utils';
 
 console.log(chunk());
 ```

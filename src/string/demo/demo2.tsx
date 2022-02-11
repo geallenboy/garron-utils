@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { telFormat } from 'garron-utils';
+import { telFormat } from '@garron/utils';
 
 export default () => {
   const [str, setStr] = useState<string>('15188889999');

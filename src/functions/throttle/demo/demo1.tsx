@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { throttle } from 'garron-utils';
+import { throttle } from '@garron/utils';
 
 export default () => {
   const [count, setCount] = useState<number>(0);

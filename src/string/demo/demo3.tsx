@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { getId } from 'garron-utils';
+import { getId } from '@garron/utils';
 
 export default () => {
   const [str, setStr] = useState<string>('');

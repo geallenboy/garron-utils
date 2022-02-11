@@ -1,6 +1,6 @@
 import { defineConfig } from 'dumi';
 export default defineConfig({
-  title: 'garron-utils',
+  title: 'garron',
   favicon:
     '/logo.svg',
   logo: '/logo.svg',
@@ -56,7 +56,7 @@ export default defineConfig({
       {
         title:'objects(对象)',
         children:[
-          '/objects/obj',
+          
         ]
       },
       {

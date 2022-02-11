@@ -13,7 +13,7 @@ group:
 # Demo
 
 ```javascript
-import { sample } from 'garron-utils';
+import { sample } from '@garron/utils';
 
 console.log(sample);
 ```

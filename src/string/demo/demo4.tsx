@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { queryString } from 'garron-utils';
+import { queryString } from '@garron/utils';
 
 export default () => {
   const _url = 'http://localhost:8000/?name=geallen&age=29&sex=男'

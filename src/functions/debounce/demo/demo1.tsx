@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { debounce } from 'garron-utils';
+import { debounce } from '@garron/utils';
 
 export default () => {
   const [count, setCount] = useState<number>(0);

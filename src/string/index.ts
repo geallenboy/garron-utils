@@ -39,7 +39,7 @@ export const telFormat = (tel: string): string => {
   const reg: RegExp = /([^?&=]+)=([^?&=]*)/g;
   search.replace(reg, (rs, $1, $2) => {
     const name: string = decodeURIComponent($1);
-    const val = String(decodeURIComponent($2));
+    const val:string = String(decodeURIComponent($2));
     obj[name] = val;
     return rs;
   });

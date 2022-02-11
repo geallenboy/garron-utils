@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { myFetch } from 'garron-utils';
+import { myFetch } from '@garron/utils';
 
 export default () => {
   const [str, setStr] = useState<string>('geallen');

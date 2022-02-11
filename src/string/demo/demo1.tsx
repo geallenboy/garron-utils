@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { strFistUpperCase } from 'garron-utils';
+import { strFistUpperCase } from '@garron/utils';
 
 export default () => {
   const [str, setStr] = useState<string>('geallen');
