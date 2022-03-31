@@ -1,33 +1,12 @@
-# garron-utils
 
-## Getting Started
+## ✨ 特性
 
-Install dependencies,
+- 易学易用
 
-```bash
-$ npm i
-```
-
-Start the dev server,
+## 📦 安装
 
 ```bash
-$ npm start
-```
-
-Build documentation,
-
-```bash
-$ npm run docs:build
-```
-
-Run test,
-
-```bash
-$ npm test
-```
-
-Build library via `father-build`,
-
-```bash
-$ npm run build
+$ npm install --save @garron/utils
+# or
+$ yarn add @garron/utils
 ```
